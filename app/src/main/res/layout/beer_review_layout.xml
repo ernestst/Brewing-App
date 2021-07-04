@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/brew_name"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/beer_fragment_text" />
+
+                    <TextView
+                        android:id="@+id/beer_review_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/beer_fragment_text_margin"
+                        android:textSize="@dimen/beer_fragment_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/brew_time"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/beer_fragment_text" />
+
+                    <TextView
+                        android:id="@+id/beer_review_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/beer_fragment_text_margin"
+                        android:textSize="@dimen/beer_fragment_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/brew_temperature"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/beer_fragment_text" />
+
+                    <TextView
+                        android:id="@+id/beer_review_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/beer_fragment_text_margin"
+                        android:textSize="@dimen/beer_fragment_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/beer_fragment_text"
+                        android:text="@string/rate"/>
+                    <TextView
+                        android:id="@+id/beer_review_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/beer_fragment_text_margin"
+                        android:textSize="@dimen/beer_fragment_text"
+                        android:text="0.0"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/beer_fragment_text"
+                        android:text="@string/style"/>
+                    <TextView
+                        android:id="@+id/beer_style_review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/beer_fragment_text_margin"
+                        android:textSize="@dimen/beer_fragment_text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="116.5dp"
+                android:layout_height="155dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/image_list_border"
+                android:src="@drawable/add_a_photo_24dp"
+                android:scaleType="centerInside">
+
+            </ImageView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/beer_fragment_text"
+            android:layout_gravity="center"
+            android:text="@string/ingredients"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ingredient_review_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:listitem="@layout/ingredient_element"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/beer_fragment_text"
+            android:layout_marginTop="@dimen/default_margin_top"
+            android:text="@string/comment"/>
+        <TextView
+            android:id="@+id/beer_comment_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/beer_fragment_text" />
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/add_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="bottom|end"
+        android:text="@string/add_review"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

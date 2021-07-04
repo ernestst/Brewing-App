@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/beers_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recipes"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/default_border"
+        android:textSize="@dimen/menu_item_text_size"
+        android:layout_margin="@dimen/menu_item_margin"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/alcohol_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/alcohol_calculator"
+        android:gravity="center"
+        android:background="@drawable/default_border"
+        android:textSize="@dimen/menu_item_text_size"
+        android:layout_margin="@dimen/menu_item_margin"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/IBU_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/IBU_calculator"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/default_border"
+        android:textSize="@dimen/menu_item_text_size"
+        android:layout_margin="@dimen/menu_item_margin"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/sugar_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sugar_calculator"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/default_border"
+        android:textSize="@dimen/menu_item_text_size"
+        android:layout_margin="@dimen/menu_item_margin"
+        android:textColor="@color/colorPrimaryDark"/>
+</LinearLayout>

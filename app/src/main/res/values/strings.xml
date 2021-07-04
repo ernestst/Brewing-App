@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">BeerProject</string>
+    <string name="alcohol_calculator">Alcohol Calculator</string>
+    <string name="sugar_calculator">Sugar Calculator</string>
+    <string name="IBU_calculator">IBU Calculator</string>
+    <string name="recipes">Recipes</string>
+    <string name="initial_gravity">Initial Gravity [P]</string>
+    <string name="final_gravity">Final Gravity [P]</string>
+    <string name="IBU" translatable="false">IBU</string>
+    <string name="add_hop">Add hop</string>
+    <string name="amount">Amount [g]</string>
+    <string name="alpha">Alpha Acid</string>
+    <string name="minute">Minute</string>
+    <string name="brew_amount">Brew Amount [L]</string>
+    <string name="temperature">Temperature [\u2103]</string>
+    <string name="sugar">Sugar</string>
+    <string name="glucose">Glucose</string>
+    <string name="beer_style">Beer Style</string>
+
+    <string-array name="beers_sugar">
+        <item>American Brown 1.5-2.5</item>
+        <item>American Dark Lager 2.5-2.7</item>
+        <item>American Lager 2.6-2.7</item>
+        <item>American Light Lager 2.4-2.6</item>
+        <item>American Pale Ale 2.2-2.8</item>
+        <item>American Pilsener 2.6-2.7</item>
+        <item>American Premium Lager 2.6-2.7</item>
+        <item>American Wheat 2.3-2.6</item>
+        <item>Bamberg Rauchbier 2.2-2.6</item>
+        <item>Barley Wine 1.3-2.3</item>
+        <item>Belgian Dubbel 1.9-2.4</item>
+        <item>Belgian Fruit Lambic 2.6-4.5</item>
+        <item>Belgian Gueuze Lambic 3.0-4.5</item>
+        <item>Belgian Lambic 3.0-4.5</item>
+        <item>Belgian Pale Ale 1.9-2.5</item>
+        <item>Belgian Strong Ale 1.9-2.4</item>
+        <item>Belgian Tripel 1.9-2.4</item>
+        <item>Belgian White (Wit) 2.1-2.6</item>
+        <item>Berliner Weisse 3.4-3.6</item>
+        <item>Bock 2.2-2.7</item>
+        <item>Bohemian Pilsener 2.3-2.5</item>
+        <item>Brown Porter 1.7-2.5</item>
+        <item>California Common 2.4-2.8</item>
+        <item>Cream Ale 2.6-2.7</item>
+        <item>Doppelbock 2.3-2.6</item>
+        <item>Dortmunder/European Export 2.5-2.7</item>
+        <item>Dunkelweizen 3.6-4.5</item>
+        <item>Düsseldorf Altbier 2.2-3.1</item>
+        <item>Eisbock 2.3-2.5</item>
+        <item>English Best (Special) Bitter 0.75-1.3</item>
+        <item>English Brown 1.5-2.3</item>
+        <item>English Dark Mild 1.3-2.0</item>
+        <item>English Light Mild 1.3-2.0</item>
+        <item>English Old/Strong Ale 1.5-2.3</item>
+        <item>English Ordinary Bitter 0.75-1.3</item>
+        <item>English Pale Ale 1.5-2.3</item>
+        <item>English Strong (Extra Special) Bitter 0.75-1.3</item>
+        <item>Flanders Brown 1.9-2.5</item>
+        <item>Foreign-Style Stout 2.3-2.6</item>
+        <item>German Pilsener 2.4-2.6</item>
+        <item>Helles Bock 2.2-2.7</item>
+        <item>Imperial Stout 1.5-2.3</item>
+        <item>India Pale Ale 1.5-2.3</item>
+        <item>Irish Dry Stout 1.6-2.0</item>
+        <item>Kölsch 2.4-2.7</item>
+        <item>Maibock 2.2-2.7</item>
+        <item>Märzen/Oktoberfest 2.6-2.7</item>
+        <item>Mercury 1.7-2.0</item>
+        <item>Münchner Helles 2.3-2.7</item>
+        <item>Munich Dunkel 2.2-2.7</item>
+        <item>North German Altbier 2.2-3.1</item>
+        <item>Oud Bruin 1.9-2.5</item>
+        <item>Robust Porter 1.8-2.5</item>
+        <item>Schwarzbier 2.2-2.6</item>
+        <item>Scottish Export Ale 0.75-1.3</item>
+        <item>Scottish Heavy Ale 0.75-1.3</item>
+        <item>Scottish Light Ale 0.75-1.3</item>
+        <item>Strong Scotch Ale 1.5-2.3</item>
+        <item>Sweet Stout 2.0-2.4</item>
+        <item>Traditional Bock 2.2-2.7</item>
+        <item>Vienna 2.4-2.6</item>
+        <item>Weizen/Weissbier 3.6-4.5</item>
+        <item>Weizenbock 3.7-4.7</item>
+    </string-array>
+
+    <string name="brew_name">Name</string>
+    <string name="brew_time">Brew Time [min]</string>
+    <string name="brew_temperature">Brew Temperature [\u2103]</string>
+    <string name="add_ingredient">Add Ingredient</string>
+    <string name="add_brew">Add Brew</string>
+    <string name="style">Style</string>
+
+    <string name="ingredient_name">Name</string>
+    <string name="ingredient_amount">Amount</string>
+    <string name="ingredient_time">Time</string>
+
+    <string name="beer_added">Added</string>
+    <string name="beer_not_added">Not Added</string>
+
+    <string name="ingredients">Ingredients</string>
+    <string name="add_review">Add Review</string>
+    <string name="rate">Rate</string>
+    <string name="taste">Taste 1-5</string>
+    <string name="aroma">Aroma 1-5</string>
+    <string name="apperance">Apperance 1-5</string>
+    <string name="bitterness">Bitterness 1-5</string>
+    <string name="comment">Comment:</string>
+    <string name="delete_beer">Delete Beer</string>
+
+    <string name="grams" translatable="false">g</string>
+    <string name="celsius" translatable="false">\u2103 C </string>
+    <string name="minutes" translatable="false">min</string>
+    
+    <string name="add_error">Please fill form properly</string>
+    <string name="search">Search</string>
+    <string name="clear_search">Clear Search</string>
+
+    <string name="rate_asc">Rate \u2193</string>
+    <string name="rate_desc">Rate \u2191</string>
+
+    <string name="name_asc">Name \u2193</string>
+    <string name="name_desc">Name \u2191</string>
+    <string name="information">Information</string>
+
+    <string name="welcome_1">Welcome in my appplication. I will guide you through all of it\'s features.</string>
+    <string name="welcome_2">Firstly you can add your beer recipes and give them review (after some tasting of course :D).</string>
+    <string name="welcome_3">Alcohol Calculator will show you how much alcohol have your lovely drink based on gravity.</string>
+    <string name="welcome_4">IBU Calculator will help you determine how bitter your\'s beer will be.</string>
+    <string name="welcome_5">Sugar Calculator will calculate how much sugar or glucose you should add in order to have proper carbonation.</string>
+    <string name="welcome_6">Author: Ernest Stachelski</string>
+
+
+</resources>

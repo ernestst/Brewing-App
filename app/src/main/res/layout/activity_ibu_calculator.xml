@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_ibu_calculator"
+    tools:context=".calculators.IBUCalculator">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/text_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/calculator_text_size"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/brew_amount"
+            android:layout_marginStart="@dimen/default_margin_start"/>
+
+        <EditText
+            android:id="@+id/ibu_liters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/calculator_text_size"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/text_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/calculator_text_size"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/final_gravity"
+            android:layout_marginStart="@dimen/default_margin_start"/>
+
+        <EditText
+            android:id="@+id/ibu_gravity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/calculator_text_size"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_hop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/add_hop" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hops_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/max_height_recyclerview"
+        android:layout_gravity="center"
+
+        tools:listitem="@layout/hop_element"
+        />
+
+    <TextView
+        android:id="@+id/ibu_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/calculator_result_text_size"/>
+
+</LinearLayout>

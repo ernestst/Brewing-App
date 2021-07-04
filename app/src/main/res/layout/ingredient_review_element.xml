@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/default_border"
+    android:layout_marginTop="@dimen/default_margin_top">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hop_element_first"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/recycler_review_element_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brew_name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/recycler_main_item_text_size"/>
+
+        <TextView
+            android:id="@+id/ingredient_name_element"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/recycler_sub_item_text_size"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/recycler_review_element_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amount"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/recycler_main_item_text_size"/>
+
+        <TextView
+            android:id="@+id/ingredient_amount_element"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/recycler_sub_item_text_size"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/recycler_review_element_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/minute"
+            android:textSize="@dimen/recycler_main_item_text_size"/>
+
+        <TextView
+            android:id="@+id/ingredient_time_element"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/recycler_sub_item_text_size"/>
+    </LinearLayout>
+
+
+</LinearLayout>
